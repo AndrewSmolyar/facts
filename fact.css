@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+}
+h1 {
+    /* ПО ФАКТУ */
+position: absolute;
+width: 616px;
+height: 169px;
+right: 0;
+left: 0;
+margin: auto;
+top: 340px;
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 100;
+font-size: 128px;
+line-height: 169px;
+/* identical to box height */
+color: #000000;
+}
+h3 {
+    position: absolute;
+width: 600px;
+height: 42px;
+right: 0;
+left: 0;
+margin: auto;
+top: 475px;
+padding-left: 6px;
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 200;
+font-size: 32px;
+line-height: 42px;
+letter-spacing: 0.215em;
+
+color: #000000;
+}
+.background {
+    position: absolute;
+width: 100%;
+height: 1210px;
+left: 0px;
+top: 421px;
+
+background: #8289C4;
+}
+.background-white {
+    position: absolute;
+width: 100%;
+height: 522px;
+top: 1629px;
+
+background: #FFFFFF;
+}
+.start-button {
+
+    box-sizing: border-box;
+
+position: absolute;
+width: 184px;
+height: 69px;
+right: 0;
+left: 0;
+margin: auto;
+top: 648px;
+background-color: transparent;
+border: 3px solid #FFFFFF;
+
+}
+.lets-go {    
+    position: absolute;
+width: 184px;
+height: 53px;
+top: -3px;
+right: -3px;
+left: -3px;
+margin: auto;
+text-align: center;
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height */
+color: #ffffff;
+padding-top: 18px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.lets-go:hover {
+    text-decoration: none;
+    color: #000000;
+}
+.start-button:hover {
+    border: 3px solid #000000;
+    color: #000000;
+}
+.info-card {
+    position: absolute;
+width: 887px;
+height: 546px;
+right: 0;
+left: 0;
+margin: auto;
+top: 986px;
+
+background: #FFFFFF;
+}
+.yacor {
+    position: absolute;
+    width: 329px;
+    height: 293px;
+    left: 502px;
+    top: 915px;
+    
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 160%;
+
+}
+.text-in-card {
+    position: absolute;
+    width: 329px;
+    height: 293px;
+    left: 502px;
+    top: 131px;
+    
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 160%;
+    /* or 38px */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+.line {
+    border: none;
+    border-top: 1.5px solid #000000;
+    border-color: #000000;
+}
+.line-up {
+    position: absolute;
+width: 209px;
+height: 0px;
+left: 562px;
+top: 70px;
+}
+.line-down {
+    position: absolute;
+width: 209px;
+height: 0px;
+left: 562px;
+top: 464px;
+}
+.info-tab {
+    display: none;
+    position: absolute;
+width: 313px;
+height: 201px;
+left: 540px;
+top: 311px;
+
+background: rgba(206, 208, 232, 0.99);
+box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+
+
+}
+.border-proof {
+    position: absolute;
+    width: 275px;
+    height: 0px;
+    left: 19px;
+    top: 43px;
+    
+    border: none;
+    border-top: 1.5px solid #000000;
+    border-color: #000000;
+}
+.info-black {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 839px;
+    top: 498px;
+    border: #CDCDCD solid 1.5px;
+    border-radius: 50%;
+    background: none;
+    
+}
+.i {
+    position: absolute;
+width: 28px;
+height: 25.5px;
+top: -1.5px;
+left: -1.5px;
+padding-top: 6px;
+padding-left: 1.5px;
+padding-right: 1.5px;
+
+text-align: center;
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 18px;
+
+color: #CDCDCD;
+}
+.info-black:hover {
+    border: #000000 solid 1.5px;
+}
+.
+.i:hover {
+    color: #000000;
+}
+.buttons-under-card {
+    position: absolute;
+width: 887.38px;
+height: 131px;
+right: 0;
+left: 0;
+margin: auto;
+top: 1563px;
+}
+.button-option {
+    position: absolute;
+    width: 60.86px;
+    height: 131px;
+    background: #CDCDCD;
+}
+.button-option:hover {
+    background: #A9A9A9;
+}
+.dots-on-button-option {
+position: absolute;
+top: 38px;
+left: 24.94px;
+}
+.button-unlike {
+    position: absolute;
+    width: 300.32px;
+    height: 131px;
+    left: 91.79px;
+    background: #CA7C7C;
+}
+.button-unlike:hover {
+    background: #CA5151;
+}
+.button-more {
+    position: absolute;
+    width: 157.64px;
+    height: 131px;
+    left: 423.05px;
+    background: #99B59C;
+}
+.button-more:hover {
+    background: #61AE69;
+}
+.button-like {
+    position: absolute;
+    width: 275.38px;
+    height: 131px;
+    left: 612px;
+    background: #A9CAE8;
+}
+.button-like:hover {
+    background: #4F97DA;
+}
+.text-on-button {
+position: absolute;
+width: 230.48px;
+height: 42px;
+right: 0;
+left: 0;
+margin: auto;
+top: 45px;
+text-align: center;
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 200;
+font-size: 32px;
+line-height: 42px;
+
+color: #FFFFFF;
+
+}
+.text-on-button-more {
+    position: absolute;
+width: 57.87px;
+height: 42px;
+right: 0;
+left: 0;
+margin: auto;
+top: 45px;
+text-align: center;
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 200;
+font-size: 32px;
+line-height: 42px;
+
+color: #FFFFFF;
+}
+.telegram-link {
+    position: absolute;
+width: 245px;
+height: 38px;
+left: 0;
+right: 0;
+margin: auto;
+top: 1930px;
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 200;
+font-size: 24px;
+line-height: 160%;
+/* or 38px */
+
+text-align: center;
+text-decoration: none;
+
+color: rgba(0, 0, 0, 0.5);
+}
+.telegram-link:hover {
+    color: #000000;
+}
