@@ -58,7 +58,7 @@ background: #FFFFFF;
     position: fixed;
     width: 52px;
     height: 80px;
-    margin-left: 29px;
+    left: 29px;
 }
 .glass {
     position: absolute;
@@ -67,7 +67,8 @@ background: #FFFFFF;
     cursor: pointer;
 }
 .theme-light {
-margin-left: 13px;
+position: absolute;
+left: 13px;
 }
 .start-button {
 
