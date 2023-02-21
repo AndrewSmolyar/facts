@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+}
+
+h1 {
+color: #ffffff;
+}
+h3 {
+color: #ffffff;
+}
+.background {
+background: #949494;
+}
+.background-white {
+background: #5D5D5D;
+}
+.start-button {
+border: 3px solid #5D5D5D;
+}
+.lets-go {    
+color: #5D5D5D;
+color: #5D5D5D;
+}
+.lets-go:hover {
+    color: #ffffff;
+}
+.start-button:hover {
+    border: 3px solid #ffffff;
+    color: #ffffff;
+}
+.info-card {
+background: #5D5D5D;
+}
+.text-in-card {
+    color: #ffffff;
+}
+.line {
+    border-top: 1.5px solid #ffffff;
+    border-color: #ffffff;
+}
+.info-tab {
+background: rgba(206, 208, 232, 0.99);
+box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+
+
+}
+.border-proof {
+    border-top: 1.5px solid #000000;
+    border-color: #000000;
+}
+.info-black {
+    border: #CDCDCD solid 1.5px;
+}
+.i {
+color: #CDCDCD;
+}
+.info-black:hover {
+    border: #000000 solid 1.5px;
+}
+.i:hover {
+    color: #000000;
+}
+
+.button-option {
+    background: #CDCDCD;
+}
+.button-option:hover {
+    background: #A9A9A9;
+}
+.button-unlike {
+    background: #CA7C7C;
+}
+.button-unlike:hover {
+    background: #CA5151;
+}
+.button-more {
+    background: #99B59C;
+}
+.button-more:hover {
+    background: #61AE69;
+}
+.button-like {
+    background: #A9CAE8;
+}
+.button-like:hover {
+    background: #4F97DA;
+}
+.text-on-button {
+color: #FFFFFF;
+
+}
+.text-on-button-more {
+color: #FFFFFF;
+}
+.telegram-link {
+color: rgba(255, 255, 255, 0.5);
+}
+.telegram-link:hover {
+    color: #ffffff;
+}
+.change-theme[data-theme="dark"] {
+    display: none;
+}
+.change-theme[data-theme="light"] {
+    display: block;
+}

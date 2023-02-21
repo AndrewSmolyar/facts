@@ -50,10 +50,24 @@ background: #8289C4;
 .background-white {
     position: absolute;
 width: 100%;
-height: 522px;
-top: 1629px;
+height: 2151px;
 
 background: #FFFFFF;
+}
+.theme {
+    position: fixed;
+    width: 52px;
+    height: 80px;
+    margin-left: 29px;
+}
+.glass {
+    position: absolute;
+}
+.theme {
+    cursor: pointer;
+}
+.theme-light {
+margin-left: 13px;
 }
 .start-button {
 
@@ -217,7 +231,6 @@ color: #CDCDCD;
 .info-black:hover {
     border: #000000 solid 1.5px;
 }
-.
 .i:hover {
     color: #000000;
 }

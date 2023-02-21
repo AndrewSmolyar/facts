@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+}
+h1 {
+color: #000000;
+}
+h3 {
+color: #000000;
+}
+.background {
+background: #8289C4;
+}
+.background-white {
+background: #FFFFFF;
+}
+.start-button {
+border: 3px solid #FFFFFF;
+}
+.lets-go {    
+color: #ffffff;
+color: #ffffff;
+}
+.lets-go:hover {
+    color: #000000;
+}
+.start-button:hover {
+    border: 3px solid #000000;
+    color: #000000;
+}
+.info-card {
+background: #FFFFFF;
+}
+.text-in-card {
+    color: #000000;
+}
+.line {
+    border-top: 1.5px solid #000000;
+    border-color: #000000;
+}
+.info-tab {
+background: rgba(206, 208, 232, 0.99);
+box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+
+
+}
+.border-proof {
+    border-top: 1.5px solid #000000;
+    border-color: #000000;
+}
+.info-black {
+    border: #CDCDCD solid 1.5px;
+}
+.i {
+color: #CDCDCD;
+}
+.info-black:hover {
+    border: #000000 solid 1.5px;
+}
+.i:hover {
+    color: #000000;
+}
+
+.button-option {
+    background: #CDCDCD;
+}
+.button-option:hover {
+    background: #A9A9A9;
+}
+.button-unlike {
+    background: #CA7C7C;
+}
+.button-unlike:hover {
+    background: #CA5151;
+}
+.button-more {
+    background: #99B59C;
+}
+.button-more:hover {
+    background: #61AE69;
+}
+.button-like {
+    background: #A9CAE8;
+}
+.button-like:hover {
+    background: #4F97DA;
+}
+.text-on-button {
+color: #FFFFFF;
+
+}
+.text-on-button-more {
+color: #FFFFFF;
+}
+.telegram-link {
+color: rgba(0, 0, 0, 0.5);
+}
+.telegram-link:hover {
+    color: #000000;
+}
+.change-theme[data-theme="dark"] {
+    display: block;
+}
+.change-theme[data-theme="light"] {
+    display: none;
+}
