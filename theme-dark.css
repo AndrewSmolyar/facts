@@ -31,7 +31,10 @@ color: #5D5D5D;
 .info-card {
 background: #5D5D5D;
 }
-.text-in-card {
+.text-block {
+    color: #FFFFFF;
+}
+#text-in-card {
     color: #ffffff;
 }
 .line {

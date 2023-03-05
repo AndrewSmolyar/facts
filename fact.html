@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8"> <!-- ВОТ КОММЕНТАРИЙ!!! -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ПО ФАКТУ</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet"> 
     <link href="fact.css" rel="stylesheet">
     <link rel="stylesheet" title="theme" href="#">
 </head>
+
 <body>
     <div class="background-white"></div>
     <div class="background"></div>
     <div class="theme">
-        <img class=" theme-light change-theme"  src="images/light.svg" data-theme="light">
-        <img class="change-theme" src="images/dark.svg" data="images/dark.scg" data-theme="dark" >
+        <img class=" theme-light change-theme" src="images/light.svg" data-theme="light">
+        <img class="change-theme" src="images/dark.svg" data="images/dark.scg" data-theme="dark">
     </div>
     <h1>ПО ФАКТУ</h1>
     <h3>просто интересные факты</h3>
@@ -23,17 +29,24 @@
     </div>
     <p><a name="card" class="yacor"></a></p>
     <div class="info-card">
-        <img src="images/picture.jpg" alt="оу... тут была красивая картинка">
-        <hr class="line line-up">
-        <p class="text-in-card">Если жительница Гавайских островов кладёт цветы за правое ухо, она сообщает тем самым, что доступна. Чем больше цветов, тем сильнее её желание.</p>
-        <hr class="line line-down">
+        <div class="card-for-image">
+            <img class="image" alt="оу... тут была красивая картинка">
+        </div>
+        <div class="card-for-text">
+            <hr class="line line-up">
+            <hr class="line line-down">
+            <div class="text-block">
+                <p id="textincard"></p>
+            </div>
+        
         <div>
-            <div class="info-black">
+            <!--<div class="info-black">
                 <a class="i">i</a>
             </div>
             <div class="info-tab">
-                <div class="border-proof"></div>
+                <div class="border-proof"></div>-->
             </div>
+        </div>        
         </div>
     </div>
     <div class="buttons-under-card">
@@ -43,7 +56,7 @@
         <div class="button-unlike">
             <p class="text-on-button">НЕ ИНТЕРЕСНО</p>
         </div>
-        <div class="button-more">
+        <div onclick="changeText()" class="button-more">
             <p class="text-on-button-more">ЕЩЕ</p>
         </div>
         <div class="button-like">
@@ -51,6 +64,8 @@
         </div>
     </div>
     <a class="telegram-link" href="https://t.me/closeptember">T.ME/CLOSEPTEMBER</a>
+    <script src="fact.js"></script>
+    <script src="generator.js"></script>
 </body>
-<script src="fact.js"></script>
+
 </html>
