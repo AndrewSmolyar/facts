@@ -282,25 +282,104 @@ height: 131px;
 right: 0;
 left: 0;
 margin: auto;
-top: 1563px;
+top: 1565px;
 user-select: none;
 -webkit-user-select: none;
+overflow: visible;
+display: flex;
 }
 .button-option {
-    position: absolute;
+    position: relative;
     width: 60.86px;
     height: 131px;
     background: #CDCDCD;
     cursor: pointer;
+ 
+    transition: 0.5s;
+
+    display: flex;
+    right: 0;
 }
 .button-option:hover {
+    position: relative;
     background: #A9A9A9;
+    height: 131px;
+    width: 300.86px; 
+    display: flex;
+    transform: translateX(-240px);
 }
-.dots-on-button-option {
-position: absolute;
-top: 38px;
-left: 24.94px;
+
+.dots {
+    position: absolute; 
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
+
+
+    right: 23.5px; /* половина ширины дива */
+    
 }
+.dot {
+     width: 13px; 
+    height: 13px; 
+    background-color: #ffffff; 
+    border-radius: 50%;
+    margin: 10px 0;
+}
+.tablo {
+    visibility: hidden;
+    width: 225px;
+    height: 110px;
+    align-self: center;
+    margin-left: 3.2%;
+    display: flex;
+    flex-direction: column;
+}
+.not-right {
+    position: relative;
+    width: 225px;
+    height: 50px;
+    background-color: #8289C4;
+    cursor: pointer;
+
+    font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 200;
+font-size: 18px;
+text-align: center;
+line-height: 50px;
+color: #FFFFFF;
+}
+.not-right:hover {
+    background-color:#A9CAE8;
+}
+.middle {
+    flex-grow: 1;
+  }
+.proof {
+    position: relative;
+    width: 225px;
+    height: 50px;
+    background-color: #8289C4;
+    cursor: pointer;
+
+    font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 200;
+font-size: 18px;
+text-align: center;
+line-height: 50px;
+color: #FFFFFF;
+}
+.proof:hover {
+    background-color: #A9CAE8;
+}
+.button-option:hover .tablo {
+    visibility: visible; /* show on hover */
+    transition-delay: 0.4s;
+    
+
+  }
 .button-unlike {
     position: absolute;
     width: 300.32px;
@@ -310,7 +389,9 @@ left: 24.94px;
     cursor: pointer;
 }
 .button-unlike:hover {
+    position: absolute;
     background: #CA5151;
+    
 }
 .button-more {
     position: absolute;
