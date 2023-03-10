@@ -93,6 +93,89 @@ background-color: transparent;
 border: 3px solid #FFFFFF;
 
 }
+.more {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width: 165px;
+    height: 52px;
+    background-color: #8289C4;
+    cursor: pointer;
+    
+}
+.more-text {
+    position: relative;
+    width: 134px;
+    height: 34px;
+    top: 9px;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+    font-family: 'JetBrains Mono';
+
+font-style: normal;
+font-weight: 200;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+
+color: #FFFFFF;
+}
+.arrow-more {
+    margin: auto 0;
+    width: 20px;
+    height: 20px;
+    color: #FFFFFF;
+    justify-self: center;
+    align-self: center;
+    vertical-align: middle;
+
+    transition: transform 0.3s;
+}
+.more:hover {
+    width: 165px;
+    height: 162px;
+    display: flex;
+}
+.more:hover .arrow-more { 
+    transform: rotate(-180deg); 
+
+}
+.links-under-more {
+    visibility: hidden;
+    position: absolute;
+    width: 130px;
+    height: 90px;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.setup-text {
+    font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 100;
+font-size: 20px;
+line-height: 26px;
+
+color: #FFFFFF;
+}
+.telegram-text {
+    text-decoration: none;
+}
+.setup-text:hover {
+    text-decoration: underline;
+}
+.telegram-text:visited {
+    color: #FFFFFF;
+}
+.more:hover .links-under-more {
+    visibility: visible; /* show on hover */
+    transition-delay: 0.0s;
+}
 .lets-go {    
     position: absolute;
 width: 184px;
@@ -121,7 +204,6 @@ padding-top: 18px;
     border: 3px solid #000000;
     color: #000000;
 }
-
 .info-card {
     position: absolute;
 width: 887px;
@@ -295,7 +377,6 @@ display: flex;
     background: #CDCDCD;
     cursor: pointer;
  
-    transition: 0.5s;
 
     display: flex;
     right: 0;
@@ -308,7 +389,6 @@ display: flex;
     display: flex;
     transform: translateX(-240px);
 }
-
 .dots {
     position: absolute; 
     align-self: center;
@@ -376,9 +456,7 @@ color: #FFFFFF;
 }
 .button-option:hover .tablo {
     visibility: visible; /* show on hover */
-    transition-delay: 0.4s;
-    
-
+    transition-delay: 0.0s;
   }
 .button-unlike {
     position: absolute;
@@ -451,6 +529,10 @@ font-size: 32px;
 line-height: 42px;
 
 color: #FFFFFF;
+}
+.tg {
+    position: absolute;
+    top: 1930px;
 }
 .telegram-link {
     position: absolute;
