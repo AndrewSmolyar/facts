@@ -169,6 +169,9 @@ color: #FFFFFF;
 .telegram-text:hover, .main-text:hover {
     text-decoration: underline;
 }
+.main-text:active, .telegram-text:active {
+    color: #FFFFFF;
+}
 .liked-text {
     color: #A9A9A9;
 }
