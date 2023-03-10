@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet"> 
-    <link href="fact.css" rel="stylesheet">
+    <link href="fact-liked.css" rel="stylesheet">
     <link rel="stylesheet" title="theme" href="#">
     <link rel=“stylesheet” href=“CustomLinkColor.css”>
 </head>
@@ -29,61 +29,13 @@
         <img class="arrow-more" src="images/arrow-more.svg">
         </div>
         <div class="links-under-more">
-            <div class="setup-text">понравилось</div>
-            <div class="setup-text">профиль</div>
+            <div class="setup-text"><a class="liked-text">понравилось</a></div>
+            <div class="setup-text"><a class="main-text" href="fact.html">главная</a></div>
             <div class="setup-text"><a href="#tg" class="telegram-text">телеграм</a></div>
         </div>
     </div>
-    <h1>ПО ФАКТУ</h1>
-    <h3>просто интересные факты</h3>
-    <div class="start-button" class="start-button">
-        <a href="#card" class="lets-go">ЛЕТС ГОУ</a>
-    </div>
-    <p><a name="card" class="yacor"></a></p>
-    <div class="info-card">
-        <div class="card-for-image">
-            <img class="image" alt="оу... тут была красивая картинка">
-        </div>
-        <div class="card-for-text">
-            <hr class="line line-up">
-            <hr class="line line-down">
-            <div class="text-block">
-                <p id="textincard"></p>
-            </div>
-        
-        <div>
-            <!--<div class="info-black">
-                <a class="i">i</a>
-            </div>
-            <div class="info-tab">
-                <div class="border-proof"></div>-->
-            </div>
-        </div>        
-        </div>
-    </div>
-    <div class="buttons-under-card">
-        <div class="button-option">
-            <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
-            <div class="tablo">
-                <div class="not-right">Это неверный факт</div>
-                <div class="middle"></div>
-                <div class="proof">Мне нужны пруфы</div>
-            </div>
-        </div>
-        <div class="button-unlike">
-            <p class="text-on-button">НЕ ИНТЕРЕСНО</p>
-        </div>
-        <div onclick="changeText()" class="button-more">
-            <p class="text-on-button-more">ЕЩЕ</p>
-        </div>
-        <div class="button-like">
-            <p class="text-on-button">ИНТЕРЕСНО</p>
-        </div>
-    </div>
+    <h1>ПОНРАВИЛОСЬ</h1>
+    <h3>тебе. мы собрали эти факты здесь</h3>
     <p><a name="tg" class="tg"></a></p>
     <a class="telegram-link" target="_blank" href="https://t.me/closeptember">T.ME/CLOSEPTEMBER</a>
     <script src="fact.js"></script>
