@@ -175,7 +175,10 @@ color: #FFFFFF;
 .liked-text {
     color: #A9A9A9;
 }
-.telegram-text:visited, .main-text:visited{
+.telegram-text:visited  {
+    color: #FFFFFF;
+}
+.main-text:visited {
     color: #FFFFFF;
 }
 .more:hover .links-under-more {
