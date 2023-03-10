@@ -175,7 +175,10 @@ color: #FFFFFF;
 .telegram-text:hover, .liked-text:hover {
     text-decoration: underline;
 }
-.telegram-text:visited, .liked-text:visited {
+.telegram-text:visited {
+    color: #FFFFFF;
+}
+.liked-text:visited {
     color: #FFFFFF;
 }
 .more:hover .links-under-more {
