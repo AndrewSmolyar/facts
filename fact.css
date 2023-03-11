@@ -9,15 +9,20 @@
          url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
     font-display: fallback;
   }
-h1 {
-    /* ПО ФАКТУ */
+.main-phrase {
 position: absolute;
-width: 616px;
-height: 169px;
+width: 80%;
+height: 164px;
 right: 0;
 left: 0;
 margin: auto;
-top: 340px;
+top: 50vh;
+transform: translateY(-50%);
+}
+h1 {
+    /* ПО ФАКТУ */
+text-align: center;
+margin-bottom: -35px;
 
 font-family: 'JetBrains Mono';
 font-style: normal;
@@ -28,14 +33,8 @@ line-height: 169px;
 color: #000000;
 }
 h3 {
-    position: absolute;
-width: 600px;
-height: 42px;
-right: 0;
-left: 0;
-margin: auto;
-top: 475px;
 padding-left: 6px;
+text-align: center;
 
 font-family: 'JetBrains Mono';
 font-style: normal;
@@ -51,7 +50,7 @@ color: #000000;
 width: 100%;
 height: 1210px;
 left: 0px;
-top: 421px;
+top: 50vh;
 
 background: #8289C4;
 }
@@ -77,21 +76,6 @@ background: #FFFFFF;
 .theme-light {
 position: absolute;
 left: 13px;
-}
-.start-button {
-
-    box-sizing: border-box;
-
-position: absolute;
-width: 184px;
-height: 69px;
-right: 0;
-left: 0;
-margin: auto;
-top: 648px;
-background-color: transparent;
-border: 3px solid #FFFFFF;
-
 }
 .more {
     position: absolute;
@@ -163,7 +147,7 @@ line-height: 26px;
 
 color: #FFFFFF;
 }
-.telegram-text, .liked-text, .main-text {
+.new-fact, .liked-text, .main-text {
     text-decoration: none;
 }
 .main-text {
@@ -172,13 +156,13 @@ color: #FFFFFF;
 .liked-text:active {
     color: #FFFFFF;
 }
-.telegram-text:active {
+.new-fact:active {
     color: #FFFFFF;
 }
-.telegram-text:hover, .liked-text:hover {
+.new-fact:hover, .liked-text:hover {
     text-decoration: underline;
 }
-.telegram-text:visited {
+.new-fact:visited {
     color: #FFFFFF;
 }
 .liked-text:visited {
@@ -211,6 +195,20 @@ padding-top: 18px;
 .lets-go:hover {
     text-decoration: none;
     color: #000000;
+}
+.start-button {
+    box-sizing: border-box;
+
+position: absolute;
+width: 184px;
+height: 69px;
+right: 0;
+left: 0;
+margin: auto;
+top: 75vh;
+background-color: transparent;
+border: 3px solid #FFFFFF;
+
 }
 .start-button:hover {
     border: 3px solid #000000;
@@ -541,10 +539,6 @@ font-size: 32px;
 line-height: 42px;
 
 color: #FFFFFF;
-}
-.tg {
-    position: absolute;
-    top: 1930px;
 }
 .telegram-link {
     position: absolute;

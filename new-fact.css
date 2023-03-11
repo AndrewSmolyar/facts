@@ -12,7 +12,7 @@
 h1 {
     /* ПО ФАКТУ */
 position: absolute;
-width: 845px;
+width: 692px;
 height: 169px;
 right: 0;
 left: 0;
@@ -29,20 +29,20 @@ color: #000000;
 }
 h3 {
     position: absolute;
-width: 845px;
+width: 692px;
 height: 42px;
 right: 0;
 left: 0;
 margin: auto;
 top: 475px;
-padding-left: 20px;
+padding-left: 22px;
 
 font-family: 'JetBrains Mono';
 font-style: normal;
 font-weight: 200;
 font-size: 32px;
 line-height: 42px;
-letter-spacing: 0.215em;
+letter-spacing: 0.285em;
 
 color: #000000;
 }
@@ -77,21 +77,6 @@ background: #FFFFFF;
 .theme-light {
 position: absolute;
 left: 13px;
-}
-.start-button {
-
-    box-sizing: border-box;
-
-position: absolute;
-width: 184px;
-height: 69px;
-right: 0;
-left: 0;
-margin: auto;
-top: 648px;
-background-color: transparent;
-border: 3px solid #FFFFFF;
-
 }
 .more {
     position: absolute;
@@ -163,20 +148,20 @@ line-height: 26px;
 
 color: #FFFFFF;
 }
-.new-fact, .main-text {
+.liked-text, .main-text {
     text-decoration: none;
 }
-.new-fact:hover, .main-text:hover {
+.liked-text:hover, .main-text:hover {
     text-decoration: underline;
 }
 .main-text:active {
     color: #FFFFFF;
 }
-.new-fact:active {
-    color: #000;
+.new-fact {
+    color:#A9A9A9;
 }
 .liked-text {
-    color: #A9A9A9;
+    color: #ffffff;
 }
 .new-fact:visited  {
     color: #FFFFFF;
@@ -188,29 +173,20 @@ color: #FFFFFF;
     visibility: visible; /* show on hover */
     transition-delay: 0.0s;
 }
-.lets-go {    
-    position: absolute;
+.new-fact-button {
+
+    box-sizing: border-box;
+
+position: absolute;
 width: 184px;
-height: 53px;
-top: -3px;
-right: -3px;
-left: -3px;
+height: 69px;
+right: 0;
+left: 0;
 margin: auto;
-text-align: center;
-font-family: 'JetBrains Mono';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 32px;
-/* identical to box height */
-color: #ffffff;
-padding-top: 18px;
-    text-decoration: none;
-    color: #ffffff;
-}
-.lets-go:hover {
-    text-decoration: none;
-    color: #000000;
+top: 648px;
+background-color: transparent;
+border: 3px solid #FFFFFF;
+
 }
 .start-button:hover {
     border: 3px solid #000000;
