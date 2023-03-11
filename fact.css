@@ -147,6 +147,9 @@ color: #FFFFFF;
 .new-fact, .liked-text, .main-text {
     text-decoration: none;
 }
+.new-fact {
+    color: #FFFFFF;
+}
 .main-text {
     color: #A9A9A9;
 }
