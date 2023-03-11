@@ -11,11 +11,8 @@
   }
 .main-phrase {
 position: absolute;
-width: 80%;
+width: 100%;
 height: 164px;
-right: 0;
-left: 0;
-margin: auto;
 top: 50vh;
 transform: translateY(-50%);
 }
@@ -48,7 +45,7 @@ color: #000000;
 .background {
     position: absolute;
 width: 100%;
-height: 1210px;
+height: 1270px;
 left: 0px;
 top: 50vh;
 
@@ -244,7 +241,7 @@ display: flex;
     width: 329px;
     height: 3px;
     left: 502px;
-    top: 915px;
+    top: 980px;
     
     font-family: 'JetBrains Mono';
     font-style: normal;
@@ -497,7 +494,7 @@ color: #FFFFFF;
     width: 275.38px;
     height: 131px;
     left: 612px;
-    background: #A9CAE8;
+    background: #8db8e1;
     cursor: pointer;
 }
 .button-like:hover {

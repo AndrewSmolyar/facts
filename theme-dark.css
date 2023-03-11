@@ -14,6 +14,9 @@ background: #949494;
 .background-white {
 background: #5D5D5D;
 }
+.more {
+    background-color:#A9A9A9;
+}
 .start-button {
 border: 3px solid #5D5D5D;
 }
@@ -71,22 +74,22 @@ color: #CDCDCD;
     background: #A9A9A9;
 }
 .button-unlike {
-    background: #CA7C7C;
+    background: #CDCDCD;
 }
 .button-unlike:hover {
-    background: #CA5151;
+    background: #CA7C7C;
 }
 .button-more {
-    background: #99B59C;
+    background: #CDCDCD;
 }
 .button-more:hover {
-    background: #61AE69;
+    background: #99B59C;
 }
 .button-like {
-    background: #A9CAE8;
+    background: #CDCDCD;
 }
 .button-like:hover {
-    background: #4F97DA;
+    background: #8db8e1;
 }
 .text-on-button {
 color: #FFFFFF;
