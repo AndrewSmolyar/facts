@@ -169,24 +169,13 @@ color: #FFFFFF;
     visibility: visible; /* show on hover */
     transition-delay: 0.0s;
 }
-.new-fact-button {
-
-    box-sizing: border-box;
-
-position: absolute;
-width: 184px;
-height: 69px;
-right: 0;
-left: 0;
-margin: auto;
-top: 75vh;
-background-color: transparent;
-border: 3px solid #FFFFFF;
-
-}
-.new-fact-button:hover {
-    border: 3px solid #000000;
-    color: #000000;
+.background-card {
+    position: absolute;
+    width: 700px;
+    height: 1340px;
+    margin: 0 auto;
+    top: 770px;
+    color: #FFFFFF;
 }
 .telegram-link {
     position: absolute;
