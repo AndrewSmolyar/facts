@@ -42,10 +42,32 @@ letter-spacing: 0.250em;
 
 color: #000000;
 }
+h4 {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: left;
+    margin-bottom: -5px;
+    
+    color: #000000;
+}
+h5 {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.005em;
+    margin-bottom: 5px;
+    
+    color: #A9A9A9;
+}
 .background {
     position: absolute;
 width: 100%;
-height: 1270px;
+height: 1920px;
 left: 0px;
 top: 50vh;
 
@@ -54,7 +76,7 @@ background: #99B59C;
 .background-white {
     position: absolute;
 width: 100%;
-height: 2151px;
+height: 2700px;
 
 background: #FFFFFF;
 }
@@ -171,11 +193,306 @@ color: #FFFFFF;
 }
 .background-card {
     position: absolute;
-    width: 700px;
-    height: 1340px;
-    margin: 0 auto;
-    top: 770px;
-    color: #FFFFFF;
+    width: 685px;
+    height: 1570px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 670px;
+    background-color: #FFFFFF;
+}
+.name-fact { /* див с вложенным текстом */
+    position: relative;
+    width: 557px;
+left: 0;
+right: 0;
+margin: auto;
+top: 52px;
+}
+.name-text-area { /* поле ввода текста */
+    box-sizing: border-box;
+    font-size: 24px;
+
+position: absolute;
+width: 557px;
+height: 36px;
+border: 1px solid #A9A9A9;
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 200;
+font-size: 24px;
+}
+.name-fact:hover > .name-text-area { /* наводишь на любую часть дива и выделяется поле ввода текста */
+    border-color: #000000;
+}
+.name-fact:hover > h5 { /* наводишь на любую часть дива и выделяется текст над полем ввода */
+    color: #000000; 
+}
+.name-text-area:focus {
+    outline: none;
+    border-color: #000000;
+}
+.about-fact { /* див с вложенным текстом */
+    position: relative;
+    width: 557px;
+left: 0;
+right: 0;
+margin: auto;
+margin-top: 140px;
+}
+.about-fact-text-area {
+    height: 180px;
+    resize: none;
+}
+.about-fact:hover > .name-text-area { /* наводишь на любую часть дива и выделяется поле ввода текста */
+    border-color: #000000;
+}
+.about-fact:hover > h5 { /* наводишь на любую часть дива и выделяется текст над полем ввода */
+    color: #000000; 
+}
+.proof-fact {
+    position: relative;
+    width: 557px;
+left: 0;
+right: 0;
+margin: auto;
+margin-top: 240px;
+}
+.proof-text-area {
+    height: 108px;
+    resize: none;
+}
+.proof-fact:hover > .name-text-area { /* наводишь на любую часть дива и выделяется поле ввода текста */
+    border-color: #000000;
+}
+.proof-fact:hover > h5 { /* наводишь на любую часть дива и выделяется текст над полем ввода */
+    color: #000000; 
+}
+.place-for-tag {
+    position: relative;
+    width: 557px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.tag {
+    position: relative;
+    min-width : 50px ;
+height: 31px;
+background-color: #A9A9A9;
+margin-bottom: 10px;
+margin-right: 10px;
+padding-left : 10px ;
+     padding-right : 10px ;
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+line-height: 26px;
+align-items: center;
+display: flex;
+justify-content: center;
+
+color: #000000;
+}
+.tag-svg {
+    width: 20px;
+    height: 20px;
+ 
+    transition-duration: .3s;
+}
+.tag:hover {
+   background-color: #99B59C;
+   cursor: pointer;
+}
+.tag-checkbox {
+    display: none;
+}
+#t-ch-animals:checked + label .tag, #t-ch-nature:checked + label .tag, 
+#t-ch-human:checked + label .tag, #t-ch-dogs:checked + label .tag, 
+#t-ch-healh:checked + label .tag, #t-ch-transport:checked + label .tag, 
+#t-ch-technology:checked + label .tag, #t-ch-sea:checked + label .tag, 
+#t-ch-cats:checked + label .tag, #t-ch-humor:checked + label .tag {
+    background-color : #61AE69 ;
+}
+.tag:hover .tag-svg {/* поворачивает плюс на 90 градусов при наведении */
+    transform: rotate(90deg);
+}
+.tag:focus {
+    background-color: #61AE69;
+}
+.tag-text {
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+.tag-fact {
+    position: relative;
+    width: 557px;
+left: 0;
+right: 0;
+margin: auto;
+margin-top: 170px;
+}
+.tag-svg[src = "images/check.svg"] {
+    /* сбросить поворот на 0 градусов */
+    transform: rotate(90deg);
+}
+.make-tag {
+    position: relative;
+    width: 557px;
+left: 0;
+right: 0;
+margin: auto;
+}
+.make-tag-text {
+    position: relative;
+    height: 36px;
+    width: 173px;
+    resize: none;
+    vertical-align: middle;
+}
+.make-tag:hover > .name-text-area { /* наводишь на любую часть дива и выделяется поле ввода текста */
+    border-color: #000000;
+}
+.make-tag:hover > h5 { /* наводишь на любую часть дива и выделяется текст над полем ввода */
+    color: #000000; 
+}
+.make-tag-button {
+    all: unset;
+    position: relative;
+    width: 124px;
+height: 36px;
+margin-left: 14px;
+vertical-align: middle;
+background: rgba(206, 208, 232, 0.99);
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+line-height: 26px;
+
+color: #000000;
+text-align: center;
+}
+.make-tag-button:hover {
+    background: #8289C4;
+}
+.make {
+    margin-bottom: 2px;
+}
+.add-picture {
+    position: relative;
+    width: 557px;
+left: 0;
+right: 0;
+margin: auto;
+margin-top: 50px;
+}
+#add-file {
+    display: none;
+}
+#add-file-div {
+    position: relative;
+    width: 210px;
+height: 36px;
+background: #D9D9D9;
+display: flex;
+justify-content: center;
+cursor: pointer;
+padding-left: 10px;
+padding-right: 10px;
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+line-height: 26px;
+
+color: #000000;
+}
+#add-file-div:hover {
+    background: rgba(206, 208, 232, 0.99);
+}
+#add-file-text {
+    margin-top: 4px;
+}
+#file {
+    position: relative;
+height: 36px;
+background: rgba(206, 208, 232, 0.99);
+display: flex;
+justify-content: center;
+align-items: center;
+min-width : 10px;
+max-width: 200px;
+width: fit-content;
+padding-left: 15px;
+padding-right: 10px;
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+line-height: 26px;
+
+color: #000000;
+}
+.square-cross {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background-color: rgba(206, 208, 232, 0.99);
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cross {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.square-cross:hover {
+    background-color: #A9A9A9;
+}
+#file {
+     display: none; 
+}
+.final-text {
+    margin-top: 50px;
+}
+.for-send {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+#send {
+    all: unset;
+    position: relative;
+width: 140px;
+height: 44px;
+background: rgba(206, 208, 232, 0.99);
+text-align: center;
+padding-bottom: 2px;
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+line-height: 26px;
+
+color: #FFFFFF;
+}
+#send:hover {
+    background:#8289C4;
+    cursor: pointer;
 }
 .telegram-link {
     position: absolute;
@@ -184,7 +501,7 @@ height: 38px;
 left: 0;
 right: 0;
 margin: auto;
-top: 1930px;
+bottom: 179px;
 
 font-family: 'JetBrains Mono';
 font-style: normal;
