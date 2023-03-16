@@ -44,7 +44,10 @@
         <div class="name-fact">
             <h4>назови свой факт одним словом</h4>
             <h5 class="under-name-fact">это слово будет отображаться на карточке факта</h5>
-            <input class="name-text-area" type="text">
+            <form action="another.php" method="post">
+                <input class="name-text-area" name="idfact" type="text">
+                <input type="submit" class="button">
+            </form>
         </div>
         <div class="about-fact">
             <h4>напиши сам факт</h4>

@@ -233,6 +233,13 @@ font-size: 24px;
     outline: none;
     border-color: #000000;
 }
+.button {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    color: #8289C4;
+    margin-top: 100px;
+}
 .about-fact { /* див с вложенным текстом */
     position: relative;
     width: 557px;
