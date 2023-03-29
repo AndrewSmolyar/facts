@@ -12,13 +12,42 @@
     <link href="fact.css" rel="stylesheet">
     <link rel="stylesheet" title="theme" href="#">
     <link rel=“stylesheet” href=“CustomLinkColor.css”>
+    <script src="jquery.js"></script>
+    
 </head>
 
 <body>
+<?php
+ob_start();
+include "test.php";
+ob_end_clean();
+?>
+    <script>
+        function myFunction() {
+            var responseImage = document.getElementsByClassName('image')[0];
+            var elements = document.getElementsByClassName('about-fact-text')[0];
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log(this.responseText);
+                    var response = this.responseText.split(";");
+                        console.log(response);
+                    var text = response[0];
+                    var image = response[1];
+                        console.log(text);
+                        console.log(image);
+                    elements.innerHTML = text;
+                    responseImage.src = image;
+                    }
+            };
+            xhttp.open('GET', 'test.php', true);
+            xhttp.send();
+        }
+    </script>
     <div class="background-white"></div>
     <div class="background"></div>
     <div class="theme">
-        <img class=" theme-light change-theme" src="images/light.svg" data-theme="light">
+        <img class="theme-light change-theme" src="images/light.svg" data-theme="light">
         <img class="change-theme" src="images/dark.svg" data="images/dark.scg" data-theme="dark">
     </div>
     <div class="more">
@@ -42,14 +71,13 @@
     <p><a name="card" class="yacor"></a></p>
     <div class="info-card">
         <div class="card-for-image">
-            <img class="image" alt="оу... тут была красивая картинка">
+        <img class="image" src="<?php echo "$image"; ?>" alt="оу... тут была красивая картинка">
         </div>
         <div class="card-for-text">
             <hr class="line line-up">
             <hr class="line line-down">
-            <div class="text-block">
-                <script src="get_facts.php"></script>
-                <p class='about-fact-text'><?=$fact?></p>
+            <div class="text-block"> 
+            <p class="about-fact-text"><?php echo "$text"; ?></p><br>
             </div>
         </div>        
     </div>
@@ -69,8 +97,11 @@
         <div class="button-unlike">
             <p class="text-on-button">НЕ ИНТЕРЕСНО</p>
         </div>
-        <div onclick="changeText()" class="button-more">
-            <p class="text-on-button-more">ЕЩЕ</p>
+        <div class="">
+            <button class="button-more" name="change" onclick="myFunction()"><p class="text-on-button-more">ЕЩЕ</p></button>
+            
+            
+            
         </div>
         <div class="button-like">
             <p class="text-on-button">ИНТЕРЕСНО</p>

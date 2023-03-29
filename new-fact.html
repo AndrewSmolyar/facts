@@ -14,6 +14,8 @@
     <link href="new-fact.css" rel="stylesheet">
     <link rel="stylesheet" title="theme" href="#">
     <link rel=“stylesheet” href=“CustomLinkColor.css”>
+    <script src="jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -41,62 +43,41 @@
         <h3>добавь и остальные увидят</h3>
     </div>
     <div class="background-card">
+        <form action="another.php" method="post" enctype="multipart/form-data">
         <div class="name-fact">
             <h4>назови свой факт одним словом</h4>
             <h5 class="under-name-fact">это слово будет отображаться на карточке факта</h5>
-            <form action="another.php" method="post">
                 <input class="name-text-area" name="idfact" type="text">
-                <input type="submit" class="button">
-            </form>
         </div>
         <div class="about-fact">
             <h4>напиши сам факт</h4>
             <h5>максимум 150 символов . думаем, должно хватить</h5>
-            <textarea maxlength="150" class="name-text-area about-fact-text-area"></textarea>
+            <textarea maxlength="150" name="about" class="name-text-area about-fact-text-area"></textarea>
         </div>
         <div class="proof-fact">
             <h4>пруфы</h4>
             <h5>укажи, откуда ты знаешь этот факт . это может быть ссылка на какую-то статью или описание древнего обычая. 100 символов</h5>
-            <textarea maxlength="100" class="name-text-area proof-text-area"></textarea>
+            <textarea maxlength="100" name="proof" class="name-text-area proof-text-area"></textarea>
         </div>
-        <div class="tag-fact">
-            <h4>теги</h4>
-            <h5>мы покажем факт тем, кому он будет интересен</h5>
-            <div class="place-for-tag">
-                <input class="tag-checkbox" id="t-ch-animals" type="checkbox"><label for="t-ch-animals"><div class="tag"><img src="images/plus.svg" class="tag-svg"><p class="tag-text">животные</p></div></label>
-                <input class="tag-checkbox" id="t-ch-nature" type="checkbox"><label for="t-ch-nature"><div class="tag"><img src="images/plus.svg" class="tag-svg"><p class="tag-text">природа</p></div></label>
-                <input class="tag-checkbox" id="t-ch-human" type="checkbox"><label for="t-ch-human"><div class="tag"><img src="images/plus.svg" class="tag-svg"><p class="tag-text">человек</p></div></label>
-                <input class="tag-checkbox" id="t-ch-dogs" type="checkbox"><label for="t-ch-dogs"><div class="tag"><img src="images/plus.svg" class="tag-svg"><p class="tag-text">собаки</p></div></label>
-                <input class="tag-checkbox" id="t-ch-healh" type="checkbox"><label for="t-ch-healh"><div class="tag"><img src="images/plus.svg" class="tag-svg"><p class="tag-text">здоровье</p></div></label>
-                <input class="tag-checkbox" id="t-ch-transport" type="checkbox"><label for="t-ch-transport"><div class="tag"><img src="images/plus.svg" class="tag-svg"><p class="tag-text">транспорт</p></div></label>
-                <input class="tag-checkbox" id="t-ch-technology" type="checkbox"><label for="t-ch-technology"><div class="tag"><img src="images/plus.svg" class="tag-svg"><p class="tag-text">технологии</p></div></label>
-                <input class="tag-checkbox" id="t-ch-sea" type="checkbox"><label for="t-ch-sea"><div class="tag"><img src="images/plus.svg" class="tag-svg"><p class="tag-text">море</p></div></label>
-                <input class="tag-checkbox" id="t-ch-cats" type="checkbox"><label for="t-ch-cats"><div class="tag"><img src="images/plus.svg" class="tag-svg"><p class="tag-text">кошки</p></div></label>
-                <input class="tag-checkbox" id="t-ch-humor" type="checkbox"><label for="t-ch-humor"><div class="tag"><img src="images/plus.svg" class="tag-svg"><p class="tag-text">юмор</p></div></label>
-            </div>
-            <div class="make-tag">
-                <h5>если нет подходящего тега - создай свой</h5>
-                <input class="make-tag-text name-text-area" type="text">
-                <button class="make-tag-button"><p class="make">добавить</p></button>
-            </div>
             <div class="add-picture">
                 <h4>добавь картинку</h4>
                 <h5>так факт будет визуально органичнее. картинку можешь взять отсюда >> <a target="_blank" href="https://unsplash.com/">unsplash.com</a></h5>
-                <input id="add-file" type="file"><label for="add-file"><div id="add-file-div"><p id="add-file-text">выбрать картинку</p></div></label>
+                <input id="add-file" name="picture" type="file"><label for="add-file"><div id="add-file-div"><p id="add-file-text">выбрать картинку</p></div></label>
                 <div id="file"><a id="file-text">file.jpg</a><div class="square-cross"><img class="cross" src="images/cross.svg"></div></div>
             </div>
             <div class="final-text">
                 <h4>готово</h4>
                 <h5>осталось нажать “отправить” и мы рассмотрим твой факт. мне уже кажется, что он интересный!</h5>
             </div>
-            <div class="for-send">
-                <button id="send">отправить</button>
+            <div class="for-send">     
+                <button id="send" type="submit">отправить</button>
             </div>
-        </div>
+        </form>
     </div>
     
     <script src="fact.js"></script>
     <script src="generator.js"></script>
+    <script src="tag-fact.js"></script>
 </body>
 
 </html>

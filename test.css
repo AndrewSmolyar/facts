@@ -1,0 +1,13 @@
+.about-fact-text {
+    position: relative;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    /* or 38px */
+    line-height: 28px;
+}
+.hide {
+    display: none;
+    visibility: hidden;
+}

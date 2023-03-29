@@ -20,6 +20,8 @@ if(activeTheme === null) {
     applyTheme(activeTheme);
 }
 
+// про "добавить картинку"
+
 var inputFile = document.getElementById('add-file'); // получить input
 var fileDiv = document.getElementById('add-file-div'); // получить див #add-file-div
 var fileNameDiv = document.getElementById('file'); // получить див #file
@@ -41,22 +43,3 @@ crossImg.addEventListener('click', function() {
   fileDiv.style.display = 'flex'; // показать див #add-file-div
 });
 
-// получить все теги по классу .tag
-var tags = document.querySelectorAll('.tag');
-// перебрать все теги и добавить им обработчик события click
-for (var i = 0; i < tags.length; i++) {
-    tags[i].addEventListener('click', function() {
-        // получить элемент изображения внутри тега по классу .tag-svg
-        var img = this.querySelector('.tag-svg');
-        // если изображение есть, то проверить его источник
-        if (img) {
-            // если источник равен плюсу, то заменить его на галочку
-            if (img.src.endsWith('images/plus.svg')) {
-                img.src = 'images/check.svg';
-            } else {
-                // иначе заменить его на плюс
-                img.src = 'images/plus.svg';
-            }
-        }
-    });
-}

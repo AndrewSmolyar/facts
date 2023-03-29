@@ -235,9 +235,6 @@ display: flex;
     position: relative;
     width: 443.5px;
     height: 546px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 .yacor {
     position: absolute;
@@ -267,23 +264,18 @@ display: flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display:flex; /* делает блок гибким контейнером */
+    align-items:center;
+    text-align: center;
 }
-#textincard {
+.about-fact-text {
     position: relative;
-    width: 330px;
-    height: 300px;
-
-    display: flex;
-    align-items: center;
-
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 200;
     font-size: 24px;
     /* or 38px */
-    line-height: normal;
-    text-align: center;
-    
+    line-height: 28px;
 }
 .line {
     border: none;

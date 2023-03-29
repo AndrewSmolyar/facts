@@ -11,14 +11,15 @@ $conn = mysqli_connect($servername, $username, $password, "fact");
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
   } else {
-    $result = mysqli_query($conn, "SELECT DISTINCT id,about,picture FROM fact ORDER BY RAND() LIMIT 1");
+    $result = mysqli_query($conn, "SELECT DISTINCT about,picture FROM fact ORDER BY RAND() LIMIT 1");
 // Генерируем HTML-код для каждой пары текст-изображение
 if (mysqli_num_rows($result) > 0) {
   while ($row = mysqli_fetch_assoc($result)) {
-    $id = $row["id"];
+    //$id = $row["id"];
     $text = $row["about"];
     $image = $row["picture"];
-    echo "$id | $text | $image";
+    echo "$text;";
+    echo "$image";
   }
 }}
 ?>
